@@ -1,0 +1,511 @@
+/*
+Copyright 2018 Allen Joseph AJ. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================
+*/
+
+body {
+	font-family: Europa, Avenir Next, Montserrat, Fredoka One;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	user-select: none;
+}
+
+img {
+	pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+#header {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f3f3f3;
+	text-align: center;
+}
+
+#header #name {
+	padding: 0;
+	margin: 0;
+	font-size: 50px;
+	letter-spacing: 10px;
+	font-weight: bold;
+	color: #272727;
+}
+
+#header #job {
+	padding: 0;
+	margin: 0 0 20px 0;
+	font-size: 18px;
+	color: #767676;
+}
+
+#header #face-img {
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	padding: 0;
+	margin: 50px auto 15px auto;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+#about {
+	width: 100%;
+	min-height: 50%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#about #about-text {
+	width: 47%;
+	color: gray;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 20px 0 0 0;
+	margin: 20px auto;
+}
+
+#about #about-text span {
+	border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+	font-weight: 600;
+	color: rgb(160, 160, 160);
+}
+
+#about #about-text span a {
+	color: gray;
+}
+
+#about #social-media {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 40px auto;
+}
+
+#about #social-media i {
+	font-size: 25px;
+	color: rgb(194, 192, 192);
+}
+
+#about #social-media i:hover {
+	color: gold;
+	transition: 0.5s;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+#section-title {
+	font-size: 40px;
+	font-weight: 600;
+	padding: 20px;
+	padding-top: 35px;
+	color: white;
+}
+
+#section-content {
+	width: 42%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 10px 20px 10px;
+	margin: 0 auto;	
+}
+
+#section-content span {
+	font-weight: 600;
+	color: #fff;
+}
+
+#section-content span:hover {
+	border-bottom: 1px solid #767676;
+	transition: 0.5s;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+#publications {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #000000;
+}
+
+#card-container {
+	position: relative;
+	width: 85%;
+	margin: 0 auto 30px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	zoom: 0.90;
+}
+
+.card {
+	width: 300px;
+	height: 375px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	margin: 15px;
+	text-align: left;
+}
+
+.card .card-top {
+	position: relative;
+	width: 100%;
+	height: 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 5px 5px 0 0;
+}
+
+.card .card-top .profile-pic {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin: 15px 10px;
+}
+
+.card .card-top .card-top-text {
+	position: relative;
+	width: 240px;
+	height: 100%;
+	border-radius: 0 5px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card .card-top .card-top-text .card-profile {
+	font-size: 13px;
+	color: black;
+	margin: -5px 0;
+}
+
+.card .card-top .card-top-text .card-profile span {
+	color: #03a87c;
+	font-weight: 500;
+}
+
+.card .card-top .card-top-text .card-info {
+	font-size: 11px;
+	font-weight: 500;
+	color: #767676;
+}
+
+.card .card-center {
+	position: relative;
+	width: 300px;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.card .card-center .card-picture {
+	position: relative;
+	height: 120px;
+	margin: 15px 0;
+	padding: 0;
+}
+
+.card #p1 {
+	background-image: url('pic/18199217_922529724556813_8416824063018865974_n.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: contain !important;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card #p2 {
+	background-image: url('pic/18922440_942770272532758_1898092130893451351_o.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: contain !important;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card #p3 {
+	background-image: url('pic/Screenshot_1.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: contain !important;	
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card .card-bottom {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	border-radius: 0 0 5px 5px;
+}
+
+.card .card-bottom .article-title {
+	font-weight: 800;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.card .card-bottom .article-desc {
+	font-size: 15px;
+	color: #767676;
+	padding: 0 10px;
+}
+
+.card .card-bottom .read-more-tag {
+	font-size: 13px;
+	color: #767676;
+	padding: 7px;
+	position: absolute;
+	bottom: 5px;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+#projects {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #dfe6e9;	
+}
+
+#projects #section-title {
+	color: rgb(41, 41, 41);
+}
+
+#projects #section-content {
+	color: rgb(41, 41, 41);
+}
+
+#project-container {
+	position: relative;
+	width: 85%;
+	margin: 0 auto 30px auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;	
+}
+
+.project-card {
+	width: 390px;
+	border-radius: 5px;
+	text-align: left;
+	background-color: #fff;
+	margin: 15px auto;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .project-title {
+	font-size: 18px;
+	color: #0366d6;
+	font-weight: 500;
+	margin: 10px 20px;
+}
+
+.project-card .project-desc {
+	position: relative;
+	width: 90%;
+	font-size: 14px;
+	color: #586069;
+	margin: 0px 20px;
+}
+
+.project-card .project-lang {
+	height: 14px;
+	margin: 20px;
+	font-size: 15px;
+	color: #586069;
+	display: flex;
+	flex-direction: row;
+}
+
+.project-card .project-lang p {
+	margin-top: -4px;
+}
+
+.project-card .project-lang .circle {
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	margin-right: 10px;
+	background-color: #3572A5;
+}
+.project-card .project-lang .circle1 {
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	margin-right: 10px;
+	background-color: #370909;
+}
+
+.project-card:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+#footer {
+	width: 100%;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#footer #footer-text {
+	color: #272727;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+#footer #footer-text i {
+	font-size: 14px;
+}
+
+#footer #footer-text i:first-child {
+	color: #f7b731;
+}
+
+#footer #footer-text i:nth-child(2) {
+	color: #ff6b6b;
+}
+
+#footer #footer-text span {
+	font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+	#header #name {
+		padding: 0;
+		padding-bottom: 10px;
+		margin: 0;
+		font-size: 40px;
+		letter-spacing: 10px;
+		font-weight: bold;
+		color: #272727;
+	}
+	
+	#header #job {
+		padding: 0;
+		padding-bottom: 20px;
+		margin: 0;
+		font-size: 13px;
+		font-weight: 600;
+		color: #767676;
+	}
+
+	#header #face-img {
+		width: 130px;
+		height: 130px;
+		border-radius: 100%;
+		padding: 0;
+		margin: 20px auto 15px auto;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	#about #about-text {
+		width: 90%;
+		color: gray;
+		font-size: 15px;
+		line-height: 30px;
+		padding: 20px 0 0 0;
+		margin: 20px auto 0 auto;
+	}	
+
+	#about #social-media {
+		width: 65%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 40px auto;
+	}
+
+	#about #social-media {
+		width: 65%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 40px auto;
+	}
+
+	#about #social-media i {
+		font-size: 20px;
+	}
+
+	#section-content {
+		width: 90%;
+		color: #fff;
+		font-size: 17px;
+		line-height: 30px;
+		padding: 0 0 20px 0;
+		margin: 0 auto;	
+	}
+
+	.project-card {
+		width: 325px;
+		border-radius: 5px;
+		text-align: left;
+		background-color: #fff;
+		margin: 15px auto;
+		zoom: 0.80;
+	}
+}
