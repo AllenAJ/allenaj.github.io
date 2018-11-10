@@ -21,6 +21,7 @@ input:focus{
 	padding:20px;
 }
 input{
+	margin-top: 100px;
 	border:none;
 	border-bottom:2px solid grey;
 	outline:none;
