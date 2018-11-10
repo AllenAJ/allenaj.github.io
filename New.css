@@ -9,6 +9,10 @@
 	color:blue;
 	margin-left:10%;
 }
+.small{
+	color:black;
+	size: :10%;
+}
 .onez{
 	border:none;
 	border-bottom:2px solid grey;
