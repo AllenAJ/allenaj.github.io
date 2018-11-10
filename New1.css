@@ -4,6 +4,7 @@
 .head{
 	font-size:1.1em;
 	color:#5385c1;
+	margin-left:10%;
  }
 .big{
 	color:#5385c1;
@@ -11,7 +12,8 @@
 }
 .small{
 	color:black;
-	size: :10%;
+	size: :10;
+	margin-left:10%;
 }
 .onez{
 	border:none;
