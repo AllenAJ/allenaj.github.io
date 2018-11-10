@@ -27,6 +27,13 @@
 	transition:0.5s;
 	padding:20px;
 }
+p {
+	border:none;
+	border-bottom:2px solid grey;
+	outline:none;
+	font-size:2em;
+	transition:0.5s;
+	}
 form{
 	margin-left:10%;
 }
