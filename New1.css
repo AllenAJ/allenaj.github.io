@@ -27,7 +27,7 @@
 	transition:0.5s;
 	padding:20px;
 }
-p {
+input{
 	border:none;
 	border-bottom:2px solid grey;
 	outline:none;
