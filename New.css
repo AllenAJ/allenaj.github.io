@@ -3,10 +3,10 @@
 }
 .head{
 	font-size:1.1em;
-	color:blue;
+	color:#5385c1;
  }
 .big{
-	color:blue;
+	color:#5385c1;
 	margin-left:10%;
 }
 .small{
@@ -21,7 +21,7 @@
 	transition:0.5s;
 }
 .onez:focus{
-	border-bottom-color:blue;
+	border-bottom-color:#5385c1;
 	transition:0.5s;
 	padding:20px;
 }
@@ -31,8 +31,8 @@ form{
 .descr{
 	margin-left:10%;
 }
-.link{
-	background:blue;
+.btn{
+	background:#5385c1;
 	color:white;
 	padding:20px;
 	font-size:1.5em;
